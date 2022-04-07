@@ -8,21 +8,10 @@
 </head>
 <body>
     <script>
-        // var arr = ["a", "o", "u", "e", "i"];
-        // function checkText(text) {
-        //     let counter = 0;
-        //     for (let letter of text.toLowerCase()) {
-        //         if (arr.includes(letter)) {
-        //             counter++
-        //         }
-        //     }
-        //     console.log(`Tổng các kí tự nguyên âm là:  ${counter} `)
-        //     return counter;
-        // }
-        // checkText('say hi ba bốn');
+       
         let str = " an sang thoi cac em oi"
     let arr = str.split("")
-    function vitri(arr){
+    function viTri(arr){
         let count = 0;
         let Vowel = ['a','o','e','u','i']
         for (let i = 0;i < arr.length;i++){
@@ -33,7 +22,7 @@
         }
         return (count != 0 ) ? count : false;
     }
-    console.log("tổng số nguyên âm"+ " " +vitri(arr));
+    console.log("tổng số nguyên âm"+ " " +viTri(arr));
     </script>
 </body>
 </html>
