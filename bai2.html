@@ -8,16 +8,18 @@
 </head>
 <body>
     <script>
-        let arr = [1,2,3,4,5,6,7]
-        let a =  prompt("nhập vào một số bất kì")
-        function kiemTra(){
-            for (var i=0; i<arr.length; i++){
-                if(a ==arr[i]){
-                    alert( "số vừa nhập  " + arr[i]+"tại vị trí" +i);
-                } 
+        let array=[2,4,7,3,2,5];
+    function checkNum(number){
+        for(let i = 0; i <array.length; i++){
+            if(array[i]== number){
+                  return console.log(`số ${number}  có ở vị trí ở trong mảng`);
+            }else{
+                return console.log("không có trong mảng");
             }
         }
-        kiemTra();
+    }
+    let number = Number(prompt("Nhập vào số: "))
+    checkNum(number);
     </script>
 </body>
 </html>
