@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>câu 3</title>
+</head>
+<body>
+    <script>
+        // var arr = ["a", "o", "u", "e", "i"];
+        // function checkText(text) {
+        //     let counter = 0;
+        //     for (let letter of text.toLowerCase()) {
+        //         if (arr.includes(letter)) {
+        //             counter++
+        //         }
+        //     }
+        //     console.log(`Tổng các kí tự nguyên âm là:  ${counter} `)
+        //     return counter;
+        // }
+        // checkText('say hi ba bốn');
+        let str = " an sang thoi cac em oi"
+    let arr = str.split("")
+    function vitri(arr){
+        let count = 0;
+        let Vowel = ['a','o','e','u','i']
+        for (let i = 0;i < arr.length;i++){
+            for(let j = 0; j<Vowel.length;j++)
+            if(arr[i] === Vowel[j]){
+                count++;
+            }
+        }
+        return (count != 0 ) ? count : false;
+    }
+    console.log("tổng số nguyên âm"+ " " +vitri(arr));
+    </script>
+</body>
+</html>

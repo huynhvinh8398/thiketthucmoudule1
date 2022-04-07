@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 4</title>
+</head>
+
+<body>
+    <script>
+        let Staff = function (fullName, email) {
+            this.fullName = fullName;
+            this.email = email;
+
+
+
+            this.getFullname = function (fullName) {
+                return this.fullName;
+            }
+            this.getEmail = function (email) {
+                return this.email;
+            }
+            this.setFullname = function (fullName) {
+                this.fullName = fullName;
+            }
+            this.setEmail = function (email) {
+                this.email = email;
+            }
+
+            this.toString = function () {
+                return (`${this.fullName},${this.email}`)
+            }
+
+        };
+        let david = new Staff('david', 'david@gmail.com');
+        david.setFullname('David Do');
+        david.setEmail('david.do@gmail.com');
+        alert(david.toString());
+        // let Staffs = function(david, )
+        var Staffs = [
+             new Staff("David Do", "david.do@gmail.com"),
+             new Staff("jack", "jack@gmail.com"),
+             new Staff("ken", "ken@gmail.com"),
+        ]
+        for (let i = 0; i < Staffs.length; i++) {
+            console.log(Staffs[i].toString());
+        }
+    </script>
+</body>
+
+</html>
